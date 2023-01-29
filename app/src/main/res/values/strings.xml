@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Mobile Library</string>
+    <string name="buy">Buy</string>
+    <string name="preview">Preview</string>
+    <string name="eng" translatable="false">Eng</string>
+    <string name="pol" translatable="false">Pl</string>
+    <string name="empty">Please enter search query</string>
+
+</resources>

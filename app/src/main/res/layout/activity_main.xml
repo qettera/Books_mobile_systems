@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/idLLsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/idEdtSearchBooks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4" />
+
+
+        <ImageButton
+            android:id="@+id/idBtnSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search" />
+
+<!--        <Button-->
+<!--            android:id="@+id/btnPl"-->
+<!--            android:layout_width="67dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/pol"-->
+<!--            android:textColor="#ffffff" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnEng"-->
+<!--            android:layout_width="67dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/eng"-->
+<!--            android:textColor="#ffffff" />-->
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/idLLsearch" />
+
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
